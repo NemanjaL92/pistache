@@ -307,6 +307,7 @@ namespace Pistache
 
     AddressParser::AddressParser(const std::string& data)
     {
+        std::cout << data << std::endl;
         std::size_t end_pos   = data.find(']');
         std::size_t start_pos = data.find('[');
         if (start_pos != std::string::npos && end_pos != std::string::npos && start_pos < end_pos)
