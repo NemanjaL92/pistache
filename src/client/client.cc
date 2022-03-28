@@ -42,7 +42,7 @@ namespace Pistache::Http::Experimental
             RawStreamBuf<char> buf(const_cast<char*>(url.data()), url.size());
             StreamCursor cursor(&buf);
 
-            match_string("http://", cursor);
+            match_string("https://", cursor);
             match_string("www", cursor);
             match_literal('.', cursor);
 
